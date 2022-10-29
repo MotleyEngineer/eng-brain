@@ -1,5 +1,8 @@
+# fish
+abbr -a . source ~/.config/fish/config.fish
+abbr -a a abbr -a
+
 # system
-abbr -a .r source ~/.config/fish/config.fish
 abbr -a z zsh
 abbr -a ps ps auxf
 abbr -a ds sudo dnf search
@@ -7,31 +10,38 @@ abbr -a di sudo dnf install
 abbr -a ssh-forwardx ssh -X -C -c aes128-ctr -m hmac-sha1
 abbr -a ... ../../
 abbr -a .... ../../../
-abbr -a . source ~/.config/fish/config.fish
-
-# git
-abbr -a gst git status -sb
-abbr -a gl tig
-abbr -a acm git add -A\n git commit -m  
-abbr -a gp git push
-abbr -a gr git remote -v
-abbr -a co git checkout
-abbr -a gs git stash
-abbr -a ga git add 
-abbr -a gc git commit -m
 
 # apps
 abbr -a tf terraform
 abbr -a kc kubectl
+abbr -a vi vim
+abbr -a v vim
+abbr -a t tldr
+abbr -a code codium
+
+# git
+abbr -a g git
+abbr -a gst git status -sb
+abbr -a gl tig
+abbr -a acm git add -A\n git commit -m  
+abbr -a aca git add -A\n git commit --amend  
+abbr -a gp git push
+abbr -a gr git remote -v
+abbr -a co git checkout
+abbr -a cob git checkout -b
+abbr -a gs git stash
+abbr -a gsl git stash list
+abbr -a ga git add 
+abbr -a gaa git add -A 
+abbr -a gc git commit -m
+abbr -a gca git commit --amend
+
+# cheat
 abbr -a c cheat
 abbr -a ce cheat -e
 abbr -a cl cheat -l
 abbr -a cs cheat -s
 abbr -a ct cheat -l -t
-abbr -a vi vim
-abbr -a v vim
-abbr -a t tldr
-abbr -a code codium
 
 # kubernetes 
 abbr -a k kubectl
